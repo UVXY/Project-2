@@ -1,0 +1,36 @@
+h1 {
+    font-family: 'Carter One', cursive;
+    font-size: 70px;
+    margin-top: 5%;
+    margin-left: 36%;
+    color: rgb(255, 94, 77);
+}
+
+#loginCard {
+    margin-left: 37%;
+    margin-top: 7%;
+    position: absolute;
+}
+
+hr {
+    height: 20px;
+    z-index: -1;
+    border-width: 5px;
+    border-color: rgb(232, 70, 101);
+}
+
+#lines {
+    z-index: -1;
+    margin-top: 13%;
+    position: relative;
+}
+
+#btn1 {
+    background-color: rgb(255, 94, 77);
+    border: none;
+}
+
+#btn2 {
+    background-color: rgb(255, 94, 77);
+    border: none;
+}
