@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var User = sequelize.define("User", {
+  var client = sequelize.define("client", {
     email: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -20,18 +20,7 @@ module.exports = function(sequelize, DataTypes) {
       validate: {
         len: [1]
       }
-    },
-    activity: {
-      type: DataTypes.ENUM,
-      values: ["Gym", "Basketball", "Football", "Soccer"]
-    },
-    level: {
-      type: DataTypes.ENUM,
-      values: ["Beginner", "Intermediate", "Expert"]
     }
-    // latitude: {
-    //   type: DataTypes.INT
-    // }
   });
-  return User;
+  return client;
 };

@@ -1,9 +1,0 @@
-DROP DATABASE IF EXISTS fit_db;
-CREATE DATABASE fit_db;
-
-CREATE TABLE profile(
-    item_id INT AUTO_INCREMENT NOT NULL,
-    name VARCHAR 
-    activity_type VARCHAR(45) NOT NULL,
-
-);
