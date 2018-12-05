@@ -39,3 +39,15 @@ $(document).ready(function(){
         $("#vball").toggleClass("activeButton");
     });
 });
+
+$(document).ready(function(){
+    $("#yoga").click(function(){
+        $("#yoga").toggleClass("activeButton");
+    });
+});
+
+$(document).ready(function(){
+    $("#bike").click(function(){
+        $("#bike").toggleClass("activeButton");
+    });
+});

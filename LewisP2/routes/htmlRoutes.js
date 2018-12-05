@@ -17,4 +17,8 @@ module.exports = function(app) {
         res.render("layouts/signUp2");
     });
 
+    app.get("/matches", function(req, res) {
+        res.render("layouts/matches");
+    });
+
 };

@@ -6,6 +6,14 @@ h1 {
     color: rgb(255, 94, 77);
 }
 
+body {
+    background-image: url("../images/desert.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
 #loginCard {
     margin-left: 37%;
     margin-top: 7%;

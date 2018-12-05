@@ -1,10 +1,13 @@
 #title {
     background-color: rgb(255, 94, 77);
     color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 body {
-    background-image: url("../images/court.jpg");
+    background-image: url("../images/bball.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -15,7 +18,7 @@ html, body {
 }
 
 h1 {
-    margin-top: 2%;
+    margin-top: 6%;
     margin-left: 2%;
     font-family: 'Carter One', cursive;
     color: rgb(255, 94, 77);
@@ -55,7 +58,7 @@ button {
     font-weight: bolder;
     border-radius: 8px;
     color: rgb(255, 94, 77);
-    background: rgb(229, 225, 225);
+    background: white;
 }
 
 button:hover {

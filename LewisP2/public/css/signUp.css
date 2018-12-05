@@ -1,8 +1,8 @@
 body {
-    background-image: url("../images/field.jpg");
+    background-image: url("../images/barbell.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 label {
@@ -20,7 +20,7 @@ label {
 }
 
 #tellus {
-    margin-top: 2%;
+    margin-top: 6%;
     margin-left: 2%;
     font-family: 'Carter One', cursive;
     color: rgb(255, 94, 77);;
@@ -29,6 +29,9 @@ label {
 #title {
     background-color: rgb(255, 94, 77);
     color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav-link {
@@ -70,7 +73,7 @@ hr {
 } */
 
 .container {
-    margin-top: 8%;
+    margin-top: 6%;
 }
 
 
@@ -113,7 +116,7 @@ hr {
     cursor: pointer;
 }
 
-#submit {
+#next {
     width: 15%;
     border-radius: 8px;
     margin-top: 5%;
@@ -126,7 +129,7 @@ hr {
     font-family: 'Patua One', cursive;
     font-weight: bolder;
     color: rgb(255, 94, 77);
-    background: rgb(229, 225, 225);
+    background: white;
 }
 
 button:hover {

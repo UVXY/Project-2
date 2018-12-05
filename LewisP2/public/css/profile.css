@@ -1,13 +1,15 @@
 body {
-    background-image: url("../images/water.jpeg");
+    background-image: url("../images/weights.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 
 #title {
     background-color: rgb(255, 94, 77);
     color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #logo {
@@ -72,10 +74,10 @@ hr {
 
 #profileCard {
     margin-left: 32%;
-    margin-top: 3%;
+    margin-top: 15%;
     position: absolute;
     width: 33% !important;
-    background-color: rgb(229, 225, 225);
+    background-color: transparent;
 }
 
 #traits {
@@ -92,7 +94,7 @@ hr {
     font-family: 'Patua One', cursive;
     font-size: 20px;
     color: rgb(255, 94, 77);
-    background-color: rgb(229, 225, 225);
+    background-color: white;
     border-radius: 8px;
 }
 
