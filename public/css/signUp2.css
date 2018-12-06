@@ -1,0 +1,98 @@
+#title {
+    background-color: rgb(255, 94, 77);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+body {
+    background-image: url("../images/bball.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+html, body {
+    width: 100%;
+}
+
+h1 {
+    margin-top: 6%;
+    margin-left: 2%;
+    font-family: 'Carter One', cursive;
+    color: rgb(255, 94, 77);
+}
+
+#logo {
+    font-family: 'Carter One', cursive;
+    color: white;
+}
+
+#logo:hover {
+    color: rgb(229, 225, 225);
+}
+
+.nav-link {
+    color: white;
+}
+
+.pagenav {
+    margin-left: 44%;
+    margin-top: 5%;
+}
+
+.page-link {
+    color: rgb(255, 94, 77);
+}
+
+button {
+    height: 70px;
+    width: 70%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Patua One', cursive;
+    font-weight: bolder;
+    border-radius: 8px;
+    color: rgb(255, 94, 77);
+    background: white;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button:active {
+    opacity: 1;
+}
+
+.activeButton {
+    width: 70%;
+    color: gray;
+    opacity: 0.2;
+}
+
+.activeButton:hover {
+    opacity: 0.4
+}
+
+.container {
+    margin-top: 3%;
+    margin-left: 18%;
+}
+ 
+#submit {
+    width: 15%;
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 42%;
+}
+
+.nav-link:hover {
+    color: rgb(229, 225, 225);
+}

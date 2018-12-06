@@ -1,0 +1,108 @@
+body {
+    background-image: url("../images/weights.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+    background-color: rgb(255, 94, 77);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#logo {
+    font-family: 'Carter One', cursive;
+    color: white;
+}
+
+#logo:hover {
+    color: rgb(229, 225, 225);
+}
+
+.nav-link {
+    color: white;
+}
+
+.pagenav {
+    margin-left: 44%;
+    margin-top: 5%;
+}
+
+.page-link {
+    color: rgb(255, 94, 77);
+}
+
+.nav-link:hover {
+    color: rgb(229, 225, 225);
+}
+
+#profilePic {
+    border-radius: 50%;
+    border: solid;
+    border-color: rgb(255, 94, 77);
+    border-width: 15px;
+    height: 40% !important;
+    width: 55%;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+/* .img-circle {
+    border-radius: 50%;
+} */
+
+#userName {
+    font-family: 'Carter One', cursive;
+    color: rgb(255, 94, 77);
+    margin-left: 29%;
+}
+
+hr {
+    height: 20px;
+    z-index: -1;
+    border-width: 5px;
+    border-color: rgb(232, 70, 101);
+}
+
+#lines {
+    z-index: -1;
+    margin-top: 19%;
+    position: relative;
+}
+
+#profileCard {
+    margin-left: 32%;
+    margin-top: 15%;
+    position: absolute;
+    width: 33% !important;
+    background-color: transparent;
+}
+
+#traits {
+    list-style-type: none;
+    font-family: 'Patua One', cursive;
+    margin-left: 25;
+    color: rgb(255, 94, 77);
+    font-size: 25px;
+}
+
+#edit {
+    margin-top: 2%;
+    margin-left: 42%;
+    font-family: 'Patua One', cursive;
+    font-size: 20px;
+    color: rgb(255, 94, 77);
+    background-color: white;
+    border-radius: 8px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button:active {
+    opacity: 1;
+}
