@@ -2,3 +2,6 @@ models/index.js
 node_modules
 
 test/
+routes/
+public/
+db/

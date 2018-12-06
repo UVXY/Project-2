@@ -1,7 +1,7 @@
 var chai = require("chai");
 var chaiHttp = require("chai-http");
 var server = require("../server");
-require("../routes/apiRoutes");
+require("../routes/activitiesApiRoutes");
 var expect = chai.expect;
 
 // Setting up the chai http plugin
@@ -23,8 +23,7 @@ describe("POST /api/activities", function() {
       gym: true,
       basketball: null,
       running: null,
-      volleyball: null,
-      client_id: 1
+      volleyball: null
     };
 
     // POST the request body to the server

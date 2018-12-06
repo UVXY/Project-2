@@ -19,13 +19,12 @@ CREATE TABLE activities
 	basketball BOOLEAN,
 	running BOOLEAN, 
 	volleyball BOOLEAN,
-    client_id int NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (client_id) REFERENCES client(id)
 );
 
--- INSERT INTO client (email, name, password)
--- VALUES 	("user@user.com", "juan", "password");
+INSERT INTO client (email, name, password)
+VALUES 	("user@user.com", "juan", "password", 0);
 
--- INSERT INTO activities (gym, basketball, running, volleyball, client_id)
--- VALUES 	(true, NULL, NULL, NULL, 1);
+INSERT INTO activities (gym, basketball, running, volleyball)
+VALUES 	(true, NULL, true, NULL);
