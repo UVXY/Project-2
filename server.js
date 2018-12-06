@@ -29,8 +29,10 @@ app.engine(
   // Routes
   require("./routes/htmlRoutes")(app);
 
+db.sequelize.sync(syncOptions).then(function() {
   app.listen(PORT, function() {
-      console.log("listening at PORT: " + PORT)
-  })
+    console.log("Listening at port: " + PORT,);
+  });
+});
 
   module.exports = app;
