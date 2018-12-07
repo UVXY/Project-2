@@ -93,11 +93,16 @@ module.exports = function(app) {
             // score will be a badge on s. Then in front end, will connect users with sorting the score from biggest
             // to smallest.
             // for the find all, ensure i disenclued current s_id
-
+            var currentUser = {
+              gym: req.body.gym,
+              running: req.body.running,
+              volleyball: req.body.volleyball,
+            }
             // initalizing score array for current user
             var score = [];
             // for loop or for each etc, to compare current users object to return array of objects
             for (var i = 0; i < dbActivitiesArr.length; i++) {
+              
               var total = 0;
               // need to define current user, which is their activities schema
               if (currentUser.gym === true && dbActivitiesArr[i].gym === true) {
@@ -123,7 +128,7 @@ module.exports = function(app) {
               }
               score.push(total);
             }
-            // res.json(dbActivities);
+            res.json(dbActivities);
             // Routes
             // app.get("/:operation/:firstNum/:secondNum", function (req, res) {
             // Parameters are received from the URL
@@ -162,19 +167,18 @@ module.exports = function(app) {
 
           // res.json(dbActivities);
         });
-
-      // Delete an example by id
-      app.delete("/api/activities/:id", function(req, res) {
-        db.activities
-          .destroy({
-            where: {
-              id: req.params.id
-            }
-          })
-          .then(function(dbActivities) {
-            res.json(dbActivities);
-          });
-      });
     });
+  });
+  // Delete an example by id
+  app.delete("/api/activities/:id", function(req, res) {
+    db.activities
+      .destroy({
+        where: {
+          id: req.params.id
+        }
+      })
+      .then(function(dbActivities) {
+        res.json(dbActivities);
+      });
   });
 };

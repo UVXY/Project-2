@@ -24,15 +24,24 @@ module.exports = function(sequelize, DataTypes) {
     score: {
       type: DataTypes.INTEGER,
       allowNull: true
-    }
+    },
+    // primaryKey: (id)
   });
   clients.associate = function(models) {
     // Associating Author with Posts
     // When an Author is deleted, also delete any associated Posts
-    clients.hasMany(models.activities, {
+    clients.hasOne(models.activities, {
       onDelete: "cascade"
     });
     // call clients id in public js like author
   };
+  clients.create({
+    email: "user@user.com",
+    name: "Juan",
+    password: "password1"
+  }).then(clients => {
+    console.log(clients.get('email'));
+    console.log(clients.get('name'));
+  });
   return clients;
 };
