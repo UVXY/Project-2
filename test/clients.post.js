@@ -1,7 +1,7 @@
 var chai = require("chai");
 var chaiHttp = require("chai-http");
 var server = require("../server");
-require("../routes/apiRoutes");
+require("../routes/clientsApiRoutes");
 var expect = chai.expect;
 
 // Setting up the chai http plugin
@@ -10,24 +10,24 @@ chai.use(chaiHttp);
 
 var request;
 
-describe("POST /api/client", function() {
+describe("POST /api/clients", function() {
   // Before each test begins, create a new request server for testing
   beforeEach(function() {
     // simulates our express server (app in server.js)
     request = chai.request(server);
   });
 
-  it("should enter client", function(done) {
+  it("should enter clients", function(done) {
     // Create an object to send to the endpoint
     var reqBody = {
       email: "user@user.com",
-      name: "Michael",
+      name: "Juan",
       password: "password1"
     };
 
     // POST the request body to the server
     request
-      .post("/api/client")
+      .post("/api/clients")
       .send(reqBody)
       .end(function(err, res) {
         var responseStatus = res.status;
@@ -41,7 +41,7 @@ describe("POST /api/client", function() {
 
         expect(responseBody).to.be.an("object");
         // The `done` function is used to end any asynchronous tests
-        done();
-      });
+       
+      }); done();
   });
 });
