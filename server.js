@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 var PORT = process.env.PORT || 3000;
+var db = require("./models");
 
 app.use(bodyParser.urlencoded({ extended: false }))
   // ========== Lewis==================
@@ -33,7 +34,7 @@ app.engine(
   "handlebars",
   exphbs({
     defaultLayout: "main"
-  });
+  })
 
 app.set("view engine", "handlebars");
 
