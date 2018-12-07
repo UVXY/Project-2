@@ -35,10 +35,26 @@
       </div>
 
       <div class="profileCardHolder">
+      {{#each data}}
       <div class="card" id="profileCard" style="width: 18rem;">
         {{!-- <img class="img-circle" id="profilePic" src="images/lebron.png"alt="Card image cap"> --}}
         <div class="card-body">
-          <h1 id="userName">Name</h1>
+          
+          <h1 id="name">{{{this.name}}}</h1>
+            <ul id="traits">
+              <li>Email: {{{this.email}}}</li>
+              <li>Activities: {{{activities}}}</li>
+            </ul>
+          
+          <a href="/signUp"><button id="edit">Message</button></a>
+        </div>
+      </div>
+      {{/each}}
+      
+      {{!-- <div class="card" id="profileCard" style="width: 18rem;">
+        {{!-- <img class="img-circle" id="profilePic" src="images/lebron.png"alt="Card image cap"> --}}
+        <div class="card-body">
+          <h1 id="name">Name</h1>
             <ul id="traits">
               <li>Age: </li>
               <li>Email: </li>
@@ -50,7 +66,7 @@
       <div class="card" id="profileCard" style="width: 18rem;">
         {{!-- <img class="img-circle" id="profilePic" src="images/lebron.png"alt="Card image cap"> --}}
         <div class="card-body">
-          <h1 id="userName">Name</h1>
+          <h1 id="name">Name</h1>
             <ul id="traits">
               <li>Age: </li>
               <li>Email: </li>
@@ -58,19 +74,7 @@
             </ul>
           <a href="signUp.html"><button id="edit">Message</button></a>
         </div>
-      </div>
-      <div class="card" id="profileCard" style="width: 18rem;">
-        {{!-- <img class="img-circle" id="profilePic" src="images/lebron.png"alt="Card image cap"> --}}
-        <div class="card-body">
-          <h1 id="userName">Name</h1>
-            <ul id="traits">
-              <li>Age: </li>
-              <li>Email: </li>
-              <li>Activities: </li>
-            </ul>
-          <a href="signUp.html"><button id="edit">Message</button></a>
-        </div>
-      </div>
+      </div> --
 
 
       </div>

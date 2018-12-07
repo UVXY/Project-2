@@ -35,6 +35,7 @@ app.engine(
   exphbs({
     defaultLayout: "main"
   })
+
 app.set("view engine", "handlebars");
 
 // Routes
@@ -50,10 +51,10 @@ if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }
 
-db.sequelize.sync(syncOptions).then(function() {
+// db.sequelize.sync(syncOptions).then(function() {
   app.listen(PORT, function() {
     console.log("Listening at port: " + PORT,);
   });
-});
+// });
 
   module.exports = app;

@@ -2,7 +2,7 @@ module.exports = function(app) {
     
   // Load index page
   app.get("/first", function(req, res) {
-      res.render("index");
+      res.render("login");
   });
 
   app.get("/profile", function(req, res) {
