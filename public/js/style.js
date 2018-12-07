@@ -1,18 +1,18 @@
 $(document).ready(function(){
-    $("#bball").click(function(){
-        $("#bball").toggleClass("activeButton");
+    $("#basketball").click(function(){
+        $("#basketball").toggleClass("activeButton");
     });
 
     $("#swim").click(function(){
         $("#swim").toggleClass("activeButton");
     });
 
-    $("#weights").click(function(){
-        $("#weights").toggleClass("activeButton");
+    $("#gym").click(function(){
+        $("#gym").toggleClass("activeButton");
     });
 
-    $("#run").click(function(){
-        $("#run").toggleClass("activeButton");
+    $("#running").click(function(){
+        $("#running").toggleClass("activeButton");
     });
 
     $("#tennis").click(function(){
@@ -23,8 +23,8 @@ $(document).ready(function(){
         $("#soccer").toggleClass("activeButton");
     });
 
-    $("#vball").click(function(){
-        $("#vball").toggleClass("activeButton");
+    $("#volleyball").click(function(){
+        $("#volleyball").toggleClass("activeButton");
     });
 
     $("#yoga").click(function(){
@@ -35,3 +35,4 @@ $(document).ready(function(){
         $("#bike").toggleClass("activeButton");
     });
 });
+

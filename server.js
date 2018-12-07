@@ -6,7 +6,6 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 var db = require("./models");
 
-
 app.use(bodyParser.urlencoded({ extended: false }))
 // ========== Lewis==================
 app.engine(
@@ -15,7 +14,7 @@ app.engine(
   exphbs({
     default: "index"
   })
-);
+
 app.set("view engine", "handlebars");
 app.use(express.static(__dirname + '/public'));
 
@@ -55,6 +54,5 @@ db.sequelize.sync(syncOptions).then(function () {
   app.listen(PORT, function () {
     console.log("Listening at port: " + PORT);
   });
-});
 
 module.exports = app;

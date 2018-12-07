@@ -22,6 +22,15 @@ module.exports = function(sequelize, DataTypes) {
       }
     });
   };
+  activities.create({
+    name: "Juan",
+    gym: true,
+    basketball: false,
+    running: false,
+    volleyball: true
+  }).then(clients => {
+    console.log(activities);
+  });
   return activities;
 };
 
