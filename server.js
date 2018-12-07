@@ -7,35 +7,34 @@ var PORT = process.env.PORT || 3000;
 var db = require("./models");
 
 app.use(bodyParser.urlencoded({ extended: false }))
-  // ========== Lewis==================
+// ========== Lewis==================
 app.engine(
 
-    "handlebars",
-    exphbs({
-      default: "index"
-    })
-  );
-  app.set("view engine", "handlebars");
-  app.use(express.static(__dirname + '/public'));
-  
-  //Sample GET request
-  app.get('/', function(req, res) {
-    
-  });
-  
-  //Sample POST request
-  app.post('/', function(req, res) {
-    
-  });
-  
-  // Routes
-  require("./routes/htmlRoutes")(app);
-  // ========== Lewis==================
   "handlebars",
   exphbs({
-    defaultLayout: "main"
+    default: "index"
   })
 
+app.set("view engine", "handlebars");
+app.use(express.static(__dirname + '/public'));
+
+//Sample GET request
+app.get('/', function (req, res) {
+
+});
+
+//Sample POST request
+app.post('/', function (req, res) {
+
+});
+
+// Routes
+require("./routes/htmlRoutes")(app);
+// ========== Lewis==================
+"handlebars",
+  exphbs({
+    defaultLayout: "main"
+  });
 app.set("view engine", "handlebars");
 
 // Routes
@@ -51,10 +50,9 @@ if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }
 
-// db.sequelize.sync(syncOptions).then(function() {
-  app.listen(PORT, function() {
-    console.log("Listening at port: " + PORT,);
+db.sequelize.sync(syncOptions).then(function () {
+  app.listen(PORT, function () {
+    console.log("Listening at port: " + PORT);
   });
-// });
 
-  module.exports = app;
+module.exports = app;
