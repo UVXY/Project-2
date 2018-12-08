@@ -1,7 +1,7 @@
 var chai = require("chai");
 var chaiHttp = require("chai-http");
 var server = require("../server");
-require("../routes/clientApiRoutes");
+require("../routes/clientsApiRoutes");
 require("../routes/activitiesApiRoutes");
 var expect = chai.expect;
 

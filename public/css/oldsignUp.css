@@ -1,8 +1,8 @@
 body {
     background-image: url("../images/barbell.jpg");
     background-repeat: no-repeat;
-    background-size: cover; 
-    background-attachment: fixed;
+    background-size: cover;
+    /* overflow: hidden; */
 }
 
 label {
@@ -160,64 +160,3 @@ input {
 .nav-link:hover {
     color: rgb(229, 225, 225);
 }
-
-button {
-    height: 70px;
-    width: 70%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: 2%;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Patua One', cursive;
-    font-weight: bolder;
-    border-radius: 8px;
-    color: rgb(255, 94, 77);
-    background: white;
-}
-
-button:hover {
-    cursor: pointer;
-    opacity: 0.7;
-}
-
-button:active {
-    opacity: 1;
-}
-
-.activeButton {
-    width: 70%;
-    color: gray;
-    opacity: 0.2;
-}
-
-.activeButton:hover {
-    opacity: 0.4
-}
-
-#submit {
-    width: 15%;
-    border-radius: 8px;
-    margin-top: 5%;
-    margin-bottom: 3%;
-    margin-left: 42%;
-}
-
-.btnContainer {
-    margin-top: 3%;
-    margin-left: 22%;
-}
-
-#signUp {
-    background: transparent;
-    color: rgb(255, 94, 77);
-    font-family: 'Patua One', cursive;
-}
-
-input {
-    background: transparent;
-    color: rgb(255, 94, 77);
-    font-family: 'Patua One', cursive;
-}
-
-
