@@ -55,4 +55,15 @@ db.sequelize.sync(syncOptions).then(function () {
     console.log("Listening at port: " + PORT);
   });
 
-module.exports = app;
+  if (process.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+  } else {
+    connection = mysql.createConnection({
+      host: "qbct6vwi8q648mrn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+      user: "nzv2rbodpblxq6sq",
+      password: "j1i267hskdb5sten",
+      database: "izs4ojo9g1een9r9"
+    });
+  }
+
+  module.exports = app;
