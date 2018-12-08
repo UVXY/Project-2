@@ -1,48 +1,48 @@
-var controller = require("../controllers/controller.js");
+// var controller = require("../controllers/controller.js");
 
-module.exports = function(app, passport) {
-  app.get("/signUp", controller.signUp);
+// module.exports = function(app, passport) {
+//   app.get("/signUp", controller.signUp);
 
-  // app.get("/signUp2", controller.signup);
+//   // app.get("/signUp2", controller.signup);
 
-  app.get("/login", controller.login);
+//   app.get("/login", controller.login);
 
-  app.get("/profile", isLoggedIn, controller.profile);
+//   app.get("/profile", isLoggedIn, controller.profile);
 
-  // app.get("/matches", function (req, res) {
-  //     res.render("layouts/matches");
-  // });
+//   // app.get("/matches", function (req, res) {
+//   //     res.render("layouts/matches");
+//   // });
 
-  app.get("/logout", controller.logout);
+//   app.get("/logout", controller.logout);
 
-  app.post("/signUp", passport.authenticate("local-signUp", {
-    successRedirect: "/profile",
+//   app.post("/signUp", passport.authenticate("local-signUp", {
+//     successRedirect: "/profile",
 
-      failureRedirect: "/signUp"
-  })
-  ));
+//       failureRedirect: "/signUp"
+//   })
+//   ));
 
-  // app.post("/signUp2", passport.authenticate("local-signUp", {
-  //         successRedirect: "/profile",
+//   // app.post("/signUp2", passport.authenticate("local-signUp", {
+//   //         successRedirect: "/profile",
 
-  //         failureRedirect: "/signUp2"
-  //     }
+//   //         failureRedirect: "/signUp2"
+//   //     }
 
-  // ));
+//   // ));
 
-  app.post("/login", passport.authenticate("local-login", {
-    successRedirect: "/profile",
+//   app.post("/login", passport.authenticate("local-login", {
+//     successRedirect: "/profile",
 
-      failureRedirect: "/login"
-  })
-  ));
+//       failureRedirect: "/login"
+//   })
+//   ));
 
-  function isLoggedIn(req, res, next) {
-    if (req.isAuthenticated()) {return next();}
+//   function isLoggedIn(req, res, next) {
+//     if (req.isAuthenticated()) {return next();}
 
-    res.redirect("/login");
-  }
-};
+//     res.redirect("/login");
+//   }
+// };
 var exports = (module.exports = {});
 
 exports.signUp = function(req, res) {
