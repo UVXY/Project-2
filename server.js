@@ -8,6 +8,10 @@ var session = require("express-session");
 var app = express();
 var PORT = process.env.PORT || 3000;
 var db = require("./models");
+var ngrok = require('ngrok');
+(async function () {
+  const url = await ngrok.connect(8080);
+})();
 
 //For BodyParser
 app.use(bodyParser.urlencoded({
@@ -85,11 +89,11 @@ db.sequelize.sync(syncOptions).then(function () {
   } else {
     connection = mysql.createConnection({
       host: "qbct6vwi8q648mrn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-      user: "nzv2rbodpblxq6sq",
-      password: "j1i267hskdb5sten",
-      database: "izs4ojo9g1een9r9"
+      user: "xxv3syghjv40glom",
+      password: "a3c3j0bv86age6ys",
+      database: "c6582kbicyrg855t"
     });
-  };
+  }
 
   module.exports = app;
 });
