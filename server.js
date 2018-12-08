@@ -64,6 +64,6 @@ db.sequelize.sync(syncOptions).then(function () {
       password: "j1i267hskdb5sten",
       database: "izs4ojo9g1een9r9"
     });
-  }
+  };
 
   module.exports = app;
