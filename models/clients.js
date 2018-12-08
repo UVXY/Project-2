@@ -31,6 +31,7 @@ module.exports = function(sequelize, DataTypes) {
     // Associating Author with Posts
     // When an Author is deleted, also delete any associated Posts
     clients.hasOne(models.activities, {
+      // foreignKey: "clientId",
       onDelete: "cascade"
     });
     // call clients id in public js like author

@@ -17,19 +17,16 @@ module.exports = function(sequelize, DataTypes) {
     // We're saying that a activities should belong to an Clients
     // A activities can't be created without an Clients due to the foreign key constraint
     activities.belongsTo(models.clients, {
-      foreignKey: {
-        allowNull: false
-      }
+      foreignKey: "clientId"
     });
   };
   activities.create({
-    name: "Juan",
     gym: true,
     basketball: false,
     running: false,
     volleyball: true
-  }).then(clients => {
-    console.log(activities);
+  }).then(activities => {
+    console.log(activities.foreignKey);
   });
   return activities;
 };

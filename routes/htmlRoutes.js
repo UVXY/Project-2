@@ -1,7 +1,7 @@
 module.exports = function(app) {
     
   // Load index page
-  app.get("/first", function(req, res) {
+  app.get("/", function(req, res) {
       res.render("login");
   });
 
