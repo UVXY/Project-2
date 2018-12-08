@@ -15,7 +15,7 @@ body {
 
 
 #loginCard {
-    margin-left: 37%;
+    margin-left: 36%;
     margin-top: 7%;
     position: absolute;
 }
@@ -41,4 +41,51 @@ hr {
 #btn2 {
     background-color: rgb(255, 94, 77);
     border: none;
+}
+
+#submit {
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 22%;
+    color: rgb(255, 94, 77);
+    font-family: 'Patua One', cursive;
+}
+
+#submit:hover {
+    opacity: 0.3;
+}
+
+#submit:active {
+    opacity: 0.7;
+}
+
+#signUpBtn{
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    width: 34%;
+    color: rgb(255, 94, 77);
+    font-family: 'Patua One', cursive;
+}
+
+#signUpBtn:hover {
+    opacity: 0.3;
+}
+
+#signUpBtn:active {
+    opacity: 0.7;
+}
+
+.form-group {
+    color: rgb(255, 94, 77);
+    font-family: 'Patua One', cursive;
+    margin-top: 9%;
+}
+
+h5 {
+    margin-left: 13%;
+    color: rgb(255, 94, 77);
+    font-family: 'Patua One', cursive;
+    font-size: 25px;
 }

@@ -1,4 +1,5 @@
 var exports = module.exports = {};
+require("sequelize");
 
 exports.signUp = function (req, res) {
 
@@ -6,24 +7,24 @@ exports.signUp = function (req, res) {
 
 };
 
-exports.signUp = function (req, res) {
+// exports.signUp2 = function (req, res) {
 
-    res.render("signUp2");
+//     res.render("signUp2");
+
+// }
+
+exports.login = function (req, res) {
+
+    res.render("login");
 
 };
 
-exports.signIn = function (req, res) {
+exports.profile = function (req, res) {
 
-    res.render("signIn");
+    res.render("profile");
 
 };
 
-exports.first = function (req, res) {
-
-    res.render("first");
-
-}
-    ;
 exports.logout = function (req, res) {
 
     req.session.destroy(function (err) {
