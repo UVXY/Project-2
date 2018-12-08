@@ -16,7 +16,7 @@ app.engine(
 );
 
 app.set("view engine", "handlebars");
-app.use(express.static(__dirname + "/public"));
+// app.use(express.static(__dirname + "/public"));
 
 // //Sample GET request
 // app.get("/", function (req, res) {
@@ -28,14 +28,14 @@ app.use(express.static(__dirname + "/public"));
 
 // });
 
-// Routes
-require("./routes/htmlRoutes")(app);
+// // Routes
+// require("./routes/htmlRoutes")(app);
 // ========== Lewis==================
-"handlebars",
-exphbs({
-  defaultLayout: "main"
-});
-app.set("view engine", "handlebars");
+// "handlebars",
+// exphbs({
+//   defaultLayout: "main"
+// });
+// app.set("view engine", "handlebars");
 
 // Routes
 require("./routes/activitiesApiRoutes")(app);
