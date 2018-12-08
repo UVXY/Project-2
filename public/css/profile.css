@@ -85,7 +85,7 @@ hr {
     font-family: 'Patua One', cursive;
     margin-left: 25;
     color: rgb(255, 94, 77);
-    font-size: 25px;
+    font-size: 40px;
 }
 
 #edit {
@@ -115,4 +115,44 @@ button:hover {
 
 button:active {
     opacity: 1;
+}
+
+#signout {
+    margin-top: 5%;
+    color: rgb(255, 94, 77);
+}
+
+#submit {
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 22%;
+    color: rgb(255, 94, 77);
+    font-family: 'Patua One', cursive;
+}
+
+#submit:hover {
+    opacity: 0.3;
+}
+
+#submit:active {
+    opacity: 0.7;
+}
+
+#signUpBtn{
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 12%;
+    width: 34%;
+    color: rgb(255, 94, 77);
+    font-family: 'Patua One', cursive;
+}
+
+#signUpBtn:hover {
+    opacity: 0.3;
+}
+
+#signUpBtn:active {
+    opacity: 0.7;
 }

@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 // var controller = require("../controllers/controller.js");
+=======
+var exports = module.exports = {};
+require("sequelize");
+>>>>>>> b68b63c8af534a84d7ad728a354633185ef7e598
 
 // module.exports = function(app, passport) {
 //   app.get("/signUp", controller.signUp);
@@ -7,6 +12,7 @@
 
 //   app.get("/login", controller.login);
 
+<<<<<<< HEAD
 //   app.get("/profile", isLoggedIn, controller.profile);
 
 //   // app.get("/matches", function (req, res) {
@@ -21,10 +27,22 @@
 //       failureRedirect: "/signUp"
 //   })
 //   ));
+=======
+// exports.signUp2 = function (req, res) {
+
+//     res.render("signUp2");
+
+// }
+
+exports.login = function (req, res) {
+
+    res.render("login");
+>>>>>>> b68b63c8af534a84d7ad728a354633185ef7e598
 
 //   // app.post("/signUp2", passport.authenticate("local-signUp", {
 //   //         successRedirect: "/profile",
 
+<<<<<<< HEAD
 //   //         failureRedirect: "/signUp2"
 //   //     }
 
@@ -32,6 +50,15 @@
 
 //   app.post("/login", passport.authenticate("local-login", {
 //     successRedirect: "/profile",
+=======
+exports.profile = function (req, res) {
+
+    res.render("profile");
+
+};
+
+exports.logout = function (req, res) {
+>>>>>>> b68b63c8af534a84d7ad728a354633185ef7e598
 
 //       failureRedirect: "/login"
 //   })
